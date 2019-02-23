@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jssc-2.8.0 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/java/src/Arduino/jssc-2.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
