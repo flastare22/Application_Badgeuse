@@ -72,8 +72,7 @@ public class Identification extends Panneau implements ActionListener {
             Connection connection= DriverManager.getConnection(this.frame.serveur,"flastare","19Wabrocad05!");
 
             this.frame.setAdmin(id, passwd);
-            this.frame.setAdmin("flastare", "19Wabrocad05!");
-
+            
             connection.close();
 
             return true;
