@@ -19,7 +19,7 @@ public class Identification extends Panneau implements ActionListener {
         this.remove(this.retour);
         this.remove(this.deconnection);
 
-        JLabel logo=new JLabel(new ImageIcon(".\\src\\main\\java\\com\\fraw\\image\\Le-Helloco-logo.png"));
+        JLabel logo=new JLabel();
         logo.setSize(this.frame.getWidth()/2,this.frame.getHeight()/2);
         logo.setLocation(this.frame.getWidth()/2-this.frame.getWidth()/4,25);
         this.add(logo);
