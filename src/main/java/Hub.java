@@ -146,11 +146,11 @@ public class Hub extends JFrame implements ActionListener {
 
             InputStream keystoreStream = new FileInputStream("./src/main/java/com/fraw/store/keystore.jck");
             KeyStore keystore = KeyStore.getInstance("JCEKS");
-            keystore.load(keystoreStream, "20tocima02".toCharArray());
+            keystore.load(keystoreStream, keystorePass.toCharArray());
             if (!keystore.containsAlias("badgeuse")) {
                 throw new RuntimeException("Alias for key not found");
             }
-            SecretKey key = (SecretKey) keystore.getKey("badgeuse", "apiipa".toCharArray());
+            SecretKey key = (SecretKey) keystore.getKey("badgeuse", keyPassWord.toCharArray());
 
             Cipher cipher = Cipher.getInstance("AES");
 
